@@ -11,5 +11,7 @@
   "resource-utils.config.option.low_side_shield": "Low Side Shield",
   "resource-utils.config.option.low_side_shield.description": "Modify the amount that a shield will be lowered by whilst not being actively used.",
   "resource-utils.config.option.side_shield": "Side Shield",
-  "resource-utils.config.option.side_shield.description": "Display the shield on the side."
+  "resource-utils.config.option.side_shield.description": "Display the shield on the side.",
+  "resource-utils.config.option.small_totem": "Small Totem",
+  "resource-utils.config.option.small_totem.description": "Modify the amount that the totem effect should be reduced by."
 }

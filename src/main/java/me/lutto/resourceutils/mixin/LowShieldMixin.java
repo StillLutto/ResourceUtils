@@ -25,10 +25,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ItemInHandRenderer.class)
 public class LowShieldMixin {
 
-    @Shadow
-    @Final
-    private ItemRenderer itemRenderer;
-
     @Inject(method = "renderItem", at = @At("HEAD"))
     private void renderItem(LivingEntity livingEntity, ItemStack itemStack, ItemDisplayContext itemDisplayContext, boolean bl, PoseStack poseStack, MultiBufferSource multiBufferSource, int i, CallbackInfo info) {
         handleShield(livingEntity, itemStack, itemDisplayContext, poseStack);
