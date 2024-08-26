@@ -1,26 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "resourceutils",
+  "id": "resource-utils",
   "version": "${version}",
-
   "name": "ResourceUtils",
   "description": "",
   "authors": [],
-  "contact": {},
-
+  "contact": {
+    "repo": "https://github.com/StillLutto/ResourceUtils"
+  },
   "license": "All-Rights-Reserved",
-  "icon": "assets/resourceutils/icon.png",
-
+  "icon": "assets/resource-utils/icon.png",
   "environment": "client",
-  "entrypoints": {},
-
-      "mixins": [
-        "resourceutils.mixins.json"
-      ],
-
+  "entrypoints": {
+    "client": [
+      "me.lutto.resourceutils.ResourceUtils"
+    ],
+    "main": [
+    ],
+    "modmenu": [
+      "me.lutto.resourceutils.config.modmenu.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "resourceutils.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
-    "minecraft": "${minecraft_version}"
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "yet_another_config_lib_v3": ">=3.5.0+1.21-fabric"
   }
 }

@@ -3,5 +3,7 @@
   "resource-utils.config.category.general": "General",
   "resource-utils.config.category.general.tooltip": "General options that change how the mod itself works.",
   "resource-utils.config.option.enabled": "Enabled",
-  "resource-utils.config.option.enabled.description": "Enable/Disable this mod from doing anything."
+  "resource-utils.config.option.enabled.description": "Completely Enable/Disable this mod.",
+  "resource-utils.config.option.low_fire": "Low Fire",
+  "resource-utils.config.option.low_fire.description": "Modify the amount that the fire effect will be lowered by."
 }
