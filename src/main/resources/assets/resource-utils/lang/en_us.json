@@ -1,0 +1,7 @@
+{
+  "resource-utils.config.title": "Resource Utils Config",
+  "resource-utils.config.category.general": "General",
+  "resource-utils.config.category.general.tooltip": "General options that change how the mod itself works.",
+  "resource-utils.config.option.enabled": "Enabled",
+  "resource-utils.config.option.enabled.description": "Enable/Disable this mod from doing anything."
+}
