@@ -14,7 +14,8 @@ public class LowFireMixin {
 
     @Inject(method = "renderFire", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/vertex/PoseStack;translate(FFF)V", shift = At.Shift.BEFORE))
     private static void renderFire(Minecraft client, PoseStack matrices, CallbackInfo ci) {
-        matrices.translate(0, -Config.low_fire / 100F, 0);
+        if (Config.enabled)
+            matrices.translate(0, -Config.low_fire / 100F, 0);
     }
 
 }

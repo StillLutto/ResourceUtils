@@ -6,7 +6,8 @@
   "mixins": [
   ],
   "client": [
-    "LowFireMixin"
+    "LowFireMixin",
+    "LowShieldMixin"
   ],
   "injectors": {
     "defaultRequire": 1
