@@ -7,8 +7,10 @@
   ],
   "client": [
     "LowFireMixin",
-    "LowShieldMixin",
-    "SmallTotemMixin"
+    "ShieldMixin",
+    "SmallTotemMixin",
+    "SmallEntityFlamesMixin",
+    "SmallFlamesBlock"
   ],
   "injectors": {
     "defaultRequire": 1

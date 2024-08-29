@@ -40,7 +40,7 @@ dependencies {
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_version}")
 
-    modRuntimeOnly("me.djtheredstoner:DevAuth-fabric:1.1.2")
+    modRuntimeOnly("me.djtheredstoner:DevAuth-fabric:1.2.1")
     modCompileOnly("maven.modrinth:sodium:RncWhTxD")
     modCompileOnly("maven.modrinth:iris:kuOV4Ece")
     modImplementation("maven.modrinth:modmenu:xhN1IvHi")

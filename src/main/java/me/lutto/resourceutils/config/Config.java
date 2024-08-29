@@ -20,6 +20,7 @@ public class Config {
     public static boolean enabled = true;
 
     public static int low_fire = 20;
+    public static boolean small_flame = true;
     public static int low_held_up_shield = 25;
     public static int low_side_shield = 25;
     public static boolean side_shield = false;

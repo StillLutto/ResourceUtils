@@ -13,5 +13,7 @@
   "resource-utils.config.option.side_shield": "Side Shield",
   "resource-utils.config.option.side_shield.description": "Display the shield on the side.",
   "resource-utils.config.option.small_totem": "Small Totem",
-  "resource-utils.config.option.small_totem.description": "Modify the amount that the totem effect should be reduced by."
+  "resource-utils.config.option.small_totem.description": "Modify the amount that the totem effect should be reduced by.",
+  "resource-utils.config.option.small_fire_model": "Small Fire Model",
+  "resource-utils.config.option.small_fire_model.description": "Display a smaller flames when the player is on fire in third person and on ground."
 }

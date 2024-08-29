@@ -1,40 +1,15 @@
 package me.lutto.resourceutils.mixin;
 
 import me.lutto.resourceutils.config.Config;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.multiplayer.ClientPacketListener;
 import net.minecraft.client.renderer.GameRenderer;
-import net.minecraft.network.protocol.game.ClientboundEntityEventPacket;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyArg;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
-
-//@Mixin(ClientPacketListener.class)
-//public class SmallTotemMixin {
-//
-//    @Unique
-//    @Final
-//    private Minecraft minecraft;
-//
-//    @Inject(method = "handleEntityEvent", at = @At(value = "INVOKE",
-//            target = "Lnet/minecraft/client/renderer/GameRenderer;displayItemActivation(Lnet/minecraft/world/item/ItemStack;)V",
-//            shift = At.Shift.BEFORE))
-//    private void injectHandleEntityEvent(ClientboundEntityEventPacket packet, CallbackInfo info) {
-//        ClientPacketListener.findTotem(this.minecraft.player);
-//        this.minecraft.gameRenderer.displayItemActivation(ClientPacketListener.findTotem(this.minecraft.player));
-//    }
-//
-//}
 
 @Mixin(GameRenderer.class)
 public class SmallTotemMixin {
