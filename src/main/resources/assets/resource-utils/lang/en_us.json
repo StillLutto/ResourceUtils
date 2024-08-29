@@ -8,6 +8,8 @@
   "resource-utils.config.option.brightness_multiplier.description": "The option to modify the in-game brightness.",
   "resource-utils.config.option.pumpkin_opacity": "Pumpkin Opacity (in %)",
   "resource-utils.config.option.pumpkin_opacity.description": "The opacity of the pumpkin overlay when worn.",
+  "resource-utils.config.option.clearer_wither_hearts": "Clearer Wither Hearts",
+  "resource-utils.config.option.clearer_wither_hearts.description": "Displays clearer wither hearts rather than the normal ones. Texture Credit: VanillaTweaks. You should check them out!",
   "resource-utils.config.option.low_fire": "Low Fire",
   "resource-utils.config.option.low_fire.description": "Modify the amount that the fire effect will be lowered by.",
   "resource-utils.config.option.low_held_up_shield": "Low Held Up Shield",

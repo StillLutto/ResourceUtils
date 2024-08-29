@@ -10,7 +10,7 @@
     "ExplosionMixin",
     "FogMixin",
     "LowFireMixin",
-    "PumpkinOverlayMixin",
+    "GuiMixin",
     "ShieldMixin",
     "SmallEntityFlamesMixin",
     "SmallFlamesBlock",
