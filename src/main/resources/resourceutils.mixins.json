@@ -6,14 +6,15 @@
   "mixins": [
   ],
   "client": [
-    "LowFireMixin",
-    "ShieldMixin",
-    "SmallTotemMixin",
-    "SmallEntityFlamesMixin",
-    "SmallFlamesBlock",
+    "BrightnessMixin",
     "ExplosionMixin",
     "FogMixin",
-    "BrightnessMixin"
+    "LowFireMixin",
+    "PumpkinOverlayMixin",
+    "ShieldMixin",
+    "SmallEntityFlamesMixin",
+    "SmallFlamesBlock",
+    "SmallTotemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

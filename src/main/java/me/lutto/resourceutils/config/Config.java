@@ -19,6 +19,7 @@ public class Config {
 
     public static boolean enabled = true;
     public static int brightness = 100;
+    public static int pumpkin_opacity = 0;
 
     public static int low_fire = 20;
     public static boolean small_flame = true;
@@ -47,6 +48,7 @@ public class Config {
 
             if (json.get("enabled") != null) enabled = json.get("enabled").getAsBoolean();
             if (json.get("brightness") != null) brightness = json.get("brightness").getAsInt();
+            if (json.get("pumpkin_opacity") != null) pumpkin_opacity = json.get("pumpkin_opacity").getAsInt();
 
             if (json.get("low_fire") != null) low_fire = json.get("low_fire").getAsInt();
             if (json.get("low_held_up_shield") != null) low_held_up_shield = json.get("low_held_up_shield").getAsInt();
@@ -74,6 +76,7 @@ public class Config {
 
         jsonConfig.addProperty("enabled", enabled);
         jsonConfig.addProperty("brightness", brightness);
+        jsonConfig.addProperty("pumpkin_opacity", pumpkin_opacity);
 
         jsonConfig.addProperty("low_fire", low_fire);
         jsonConfig.addProperty("low_held_up_shield", low_held_up_shield);

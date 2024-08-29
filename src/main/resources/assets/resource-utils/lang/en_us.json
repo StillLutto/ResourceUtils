@@ -4,6 +4,10 @@
   "resource-utils.config.category.general.tooltip": "General options that change how the mod itself works.",
   "resource-utils.config.option.enabled": "Enabled",
   "resource-utils.config.option.enabled.description": "Completely Enable/Disable this mod.",
+  "resource-utils.config.option.brightness": "Brightness (in %)",
+  "resource-utils.config.option.brightness_multiplier.description": "The option to modify the in-game brightness.",
+  "resource-utils.config.option.pumpkin_opacity": "Pumpkin Opacity (in %)",
+  "resource-utils.config.option.pumpkin_opacity.description": "The opacity of the pumpkin overlay when worn.",
   "resource-utils.config.option.low_fire": "Low Fire",
   "resource-utils.config.option.low_fire.description": "Modify the amount that the fire effect will be lowered by.",
   "resource-utils.config.option.low_held_up_shield": "Low Held Up Shield",
@@ -35,7 +39,5 @@
   "resource-utils.config.option.no_darkness_fog": "Disable Darkness Fog",
   "resource-utils.config.option.no_darkness_fog.description": "The option to disable darkness fog.",
   "resource-utils.config.option.no_blindness_fog": "Disable Blindness Fog",
-  "resource-utils.config.option.no_blindness_fog.description": "The option to disable blindness fog.",
-  "resource-utils.config.option.brightness": "Brightness (in %)",
-  "resource-utils.config.option.brightness_multiplier.description": "The option to modify the in-game brightness."
+  "resource-utils.config.option.no_blindness_fog.description": "The option to disable blindness fog."
 }
