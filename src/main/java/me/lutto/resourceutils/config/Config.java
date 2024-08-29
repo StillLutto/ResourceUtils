@@ -27,6 +27,8 @@ public class Config {
     public static boolean side_shield = false;
     public static int small_totem = 40;
 
+    public static boolean no_explosion_sounds = false;
+
     public static void load() {
         if (!Files.exists(PATH)) save();
 
@@ -35,11 +37,14 @@ public class Config {
             JsonObject json = JsonParser.parseReader(bufferedReader).getAsJsonObject();
 
             if (json.get("enabled") != null) enabled = json.get("enabled").getAsBoolean();
+
             if (json.get("low_fire") != null) low_fire = json.get("low_fire").getAsInt();
             if (json.get("low_held_up_shield") != null) low_held_up_shield = json.get("low_held_up_shield").getAsInt();
             if (json.get("low_side_shield") != null) low_side_shield = json.get("low_side_shield").getAsInt();
             if (json.get("shield_size") != null) shield_size = json.get("shield_size").getAsInt();
             if (json.get("small_totem") != null) small_totem = json.get("small_totem").getAsInt();
+
+            if (json.get("no_explosion_sounds") != null) no_explosion_sounds = json.get("no_explosion_sounds").getAsBoolean();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -49,11 +54,14 @@ public class Config {
         JsonObject jsonConfig = new JsonObject();
 
         jsonConfig.addProperty("enabled", enabled);
+
         jsonConfig.addProperty("low_fire", low_fire);
         jsonConfig.addProperty("low_held_up_shield", low_held_up_shield);
         jsonConfig.addProperty("low_side_shield", low_side_shield);
         jsonConfig.addProperty("shield_size", shield_size);
         jsonConfig.addProperty("small_totem", small_totem);
+
+        jsonConfig.addProperty("no_explosion_sounds", no_explosion_sounds);
         try (BufferedWriter fileWriter = Files.newBufferedWriter(PATH)) {
             fileWriter.write(GSON.toJson(jsonConfig));
         } catch (IOException e) {

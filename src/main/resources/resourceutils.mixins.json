@@ -10,7 +10,8 @@
     "ShieldMixin",
     "SmallTotemMixin",
     "SmallEntityFlamesMixin",
-    "SmallFlamesBlock"
+    "SmallFlamesBlock",
+    "ExplosionMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -10,12 +10,14 @@
   "resource-utils.config.option.low_held_up_shield.description": "Modify the amount that a held up shield will be lowered by.",
   "resource-utils.config.option.low_side_shield": "Low Side Shield",
   "resource-utils.config.option.low_side_shield.description": "Modify the amount that a shield will be lowered by whilst not being actively used.",
+  "resource-utils.config.option.small_fire_model": "Small Fire Model",
+  "resource-utils.config.option.small_fire_model.description": "Display smaller flames on ground and when the player is on fire in third person.",
   "resource-utils.config.option.side_shield": "Side Shield",
   "resource-utils.config.option.side_shield.description": "Display the shield on the side.",
   "resource-utils.config.option.shield_size": "Shield Size (in %)",
   "resource-utils.config.option.shield_size.description": "Modify the size of a shield from 100%. WARNING: This might clash with Low Shield and make the shield not visible.",
   "resource-utils.config.option.small_totem": "Small Totem",
   "resource-utils.config.option.small_totem.description": "Modify the amount that the totem effect should be reduced by.",
-  "resource-utils.config.option.small_fire_model": "Small Fire Model",
-  "resource-utils.config.option.small_fire_model.description": "Display smaller flames on ground and when the player is on fire in third person."
+  "resource-utils.config.option.no_explosion_sounds": "No Explosion Sounds",
+  "resource-utils.config.option.no_explosion_sounds.description": "The option to disable explosion sounds. Recommended for Crystal and Minecraft PvP."
 }
