@@ -11,7 +11,8 @@
     "SmallTotemMixin",
     "SmallEntityFlamesMixin",
     "SmallFlamesBlock",
-    "ExplosionMixin"
+    "ExplosionMixin",
+    "FogMixin"
   ],
   "injectors": {
     "defaultRequire": 1

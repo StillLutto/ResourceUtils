@@ -1,12 +1,9 @@
 package me.lutto.resourceutils;
 
 import me.lutto.resourceutils.config.Config;
-import me.lutto.resourceutils.listeners.SoundListener;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
-import net.minecraft.client.sounds.SoundEventListener;
-import net.minecraft.sounds.SoundEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

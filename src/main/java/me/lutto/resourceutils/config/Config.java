@@ -28,6 +28,7 @@ public class Config {
     public static int small_totem = 40;
 
     public static boolean no_explosion_sounds = false;
+    public static boolean no_lava_fog = false;
 
     public static void load() {
         if (!Files.exists(PATH)) save();
@@ -45,6 +46,8 @@ public class Config {
             if (json.get("small_totem") != null) small_totem = json.get("small_totem").getAsInt();
 
             if (json.get("no_explosion_sounds") != null) no_explosion_sounds = json.get("no_explosion_sounds").getAsBoolean();
+
+            if (json.get("no_lava_fog") != null) no_lava_fog = json.get("no_lava_fog").getAsBoolean();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -62,6 +65,8 @@ public class Config {
         jsonConfig.addProperty("small_totem", small_totem);
 
         jsonConfig.addProperty("no_explosion_sounds", no_explosion_sounds);
+
+        jsonConfig.addProperty("no_lava_fog", no_lava_fog);
         try (BufferedWriter fileWriter = Files.newBufferedWriter(PATH)) {
             fileWriter.write(GSON.toJson(jsonConfig));
         } catch (IOException e) {
