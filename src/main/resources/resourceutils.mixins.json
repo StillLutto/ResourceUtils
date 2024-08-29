@@ -12,7 +12,8 @@
     "SmallEntityFlamesMixin",
     "SmallFlamesBlock",
     "ExplosionMixin",
-    "FogMixin"
+    "FogMixin",
+    "BrightnessMixin"
   ],
   "injectors": {
     "defaultRequire": 1

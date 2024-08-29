@@ -29,5 +29,8 @@
     "fabric": "*",
     "minecraft": "${minecraft_version}",
     "yet_another_config_lib_v3": ">=3.5.0+1.21-fabric"
+  },
+  "breaks": {
+    "bactromod": "*"
   }
 }

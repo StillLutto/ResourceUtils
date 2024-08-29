@@ -35,5 +35,7 @@
   "resource-utils.config.option.no_darkness_fog": "Disable Darkness Fog",
   "resource-utils.config.option.no_darkness_fog.description": "The option to disable darkness fog.",
   "resource-utils.config.option.no_blindness_fog": "Disable Blindness Fog",
-  "resource-utils.config.option.no_blindness_fog.description": "The option to disable blindness fog."
+  "resource-utils.config.option.no_blindness_fog.description": "The option to disable blindness fog.",
+  "resource-utils.config.option.brightness": "Brightness (in %)",
+  "resource-utils.config.option.brightness_multiplier.description": "The option to modify the in-game brightness."
 }

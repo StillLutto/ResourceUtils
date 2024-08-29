@@ -18,6 +18,7 @@ public class Config {
             .create();
 
     public static boolean enabled = true;
+    public static int brightness = 100;
 
     public static int low_fire = 20;
     public static boolean small_flame = true;
@@ -45,6 +46,7 @@ public class Config {
             JsonObject json = JsonParser.parseReader(bufferedReader).getAsJsonObject();
 
             if (json.get("enabled") != null) enabled = json.get("enabled").getAsBoolean();
+            if (json.get("brightness") != null) brightness = json.get("brightness").getAsInt();
 
             if (json.get("low_fire") != null) low_fire = json.get("low_fire").getAsInt();
             if (json.get("low_held_up_shield") != null) low_held_up_shield = json.get("low_held_up_shield").getAsInt();
@@ -58,7 +60,7 @@ public class Config {
             if (json.get("no_water_fog") != null) no_underwater_fog = json.get("no_water_fog").getAsBoolean();
             if (json.get("no_powder_snow_fog") != null) no_powder_snow_fog = json.get("no_powder_snow_fog").getAsBoolean();
             if (json.get("no_nether_fog") != null) no_nether_fog = json.get("no_nether_fog").getAsBoolean();
-            if (json.get("no_underwater_fog") != null) no_overworld_fog = json.get("no_overworld_fog").getAsBoolean();
+            if (json.get("no_overworld_fog") != null) no_overworld_fog = json.get("no_overworld_fog").getAsBoolean();
             if (json.get("no_sky_fog") != null) no_sky_fog = json.get("no_sky_fog").getAsBoolean();
             if (json.get("no_darkness_fog") != null) no_darkness_fog = json.get("no_darkness_fog").getAsBoolean();
             if (json.get("no_blindness_fog") != null) no_blindness_fog = json.get("no_blindness_fog").getAsBoolean();
@@ -71,6 +73,7 @@ public class Config {
         JsonObject jsonConfig = new JsonObject();
 
         jsonConfig.addProperty("enabled", enabled);
+        jsonConfig.addProperty("brightness", brightness);
 
         jsonConfig.addProperty("low_fire", low_fire);
         jsonConfig.addProperty("low_held_up_shield", low_held_up_shield);
