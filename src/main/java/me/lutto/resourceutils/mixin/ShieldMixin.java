@@ -28,6 +28,8 @@ public class ShieldMixin {
 
         if (itemStack.is(Items.SHIELD) && livingEntity.getUseItem().is(Items.SHIELD)) {
             poseStack.translate(0f, -Config.low_held_up_shield / 100f, 0f);
+            float scale = (float) Config.shield_size / 100;
+            poseStack.scale(scale, scale, scale);
             return;
         }
         if (itemStack.is(Items.SHIELD)) {
@@ -35,6 +37,8 @@ public class ShieldMixin {
                 poseStack.mulPose(Axis.YP.rotation(2f));
 
             poseStack.translate(0f, -Config.low_side_shield / 100f, 0f);
+            float scale = (float) Config.shield_size / 100;
+            poseStack.scale(scale, scale, scale);
         }
     }
 

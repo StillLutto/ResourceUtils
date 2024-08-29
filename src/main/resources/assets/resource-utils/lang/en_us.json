@@ -12,8 +12,10 @@
   "resource-utils.config.option.low_side_shield.description": "Modify the amount that a shield will be lowered by whilst not being actively used.",
   "resource-utils.config.option.side_shield": "Side Shield",
   "resource-utils.config.option.side_shield.description": "Display the shield on the side.",
+  "resource-utils.config.option.shield_size": "Shield Size (in %)",
+  "resource-utils.config.option.shield_size.description": "Modify the size of a shield from 100%. WARNING: This might clash with Low Shield and make the shield not visible.",
   "resource-utils.config.option.small_totem": "Small Totem",
   "resource-utils.config.option.small_totem.description": "Modify the amount that the totem effect should be reduced by.",
   "resource-utils.config.option.small_fire_model": "Small Fire Model",
-  "resource-utils.config.option.small_fire_model.description": "Display a smaller flames when the player is on fire in third person and on ground."
+  "resource-utils.config.option.small_fire_model.description": "Display smaller flames on ground and when the player is on fire in third person."
 }
