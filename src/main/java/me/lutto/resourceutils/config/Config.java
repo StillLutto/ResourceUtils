@@ -29,6 +29,13 @@ public class Config {
 
     public static boolean no_explosion_sounds = false;
     public static boolean no_lava_fog = false;
+    public static boolean no_underwater_fog = false;
+    public static boolean no_powder_snow_fog = false;
+    public static boolean no_nether_fog = false;
+    public static boolean no_overworld_fog = false;
+    public static boolean no_sky_fog = false;
+    public static boolean no_darkness_fog = false;
+    public static boolean no_blindness_fog = false;
 
     public static void load() {
         if (!Files.exists(PATH)) save();
@@ -48,6 +55,13 @@ public class Config {
             if (json.get("no_explosion_sounds") != null) no_explosion_sounds = json.get("no_explosion_sounds").getAsBoolean();
 
             if (json.get("no_lava_fog") != null) no_lava_fog = json.get("no_lava_fog").getAsBoolean();
+            if (json.get("no_water_fog") != null) no_underwater_fog = json.get("no_water_fog").getAsBoolean();
+            if (json.get("no_powder_snow_fog") != null) no_powder_snow_fog = json.get("no_powder_snow_fog").getAsBoolean();
+            if (json.get("no_nether_fog") != null) no_nether_fog = json.get("no_nether_fog").getAsBoolean();
+            if (json.get("no_underwater_fog") != null) no_overworld_fog = json.get("no_overworld_fog").getAsBoolean();
+            if (json.get("no_sky_fog") != null) no_sky_fog = json.get("no_sky_fog").getAsBoolean();
+            if (json.get("no_darkness_fog") != null) no_darkness_fog = json.get("no_darkness_fog").getAsBoolean();
+            if (json.get("no_blindness_fog") != null) no_blindness_fog = json.get("no_blindness_fog").getAsBoolean();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -67,6 +81,14 @@ public class Config {
         jsonConfig.addProperty("no_explosion_sounds", no_explosion_sounds);
 
         jsonConfig.addProperty("no_lava_fog", no_lava_fog);
+        jsonConfig.addProperty("no_water_fog", no_underwater_fog);
+        jsonConfig.addProperty("no_powder_snow_fog", no_powder_snow_fog);
+        jsonConfig.addProperty("no_nether_fog", no_nether_fog);
+        jsonConfig.addProperty("no_underwater_fog", no_overworld_fog);
+        jsonConfig.addProperty("no_sky_fog", no_sky_fog);
+        jsonConfig.addProperty("no_darkness_fog", no_darkness_fog);
+        jsonConfig.addProperty("no_blindness_fog", no_blindness_fog);
+
         try (BufferedWriter fileWriter = Files.newBufferedWriter(PATH)) {
             fileWriter.write(GSON.toJson(jsonConfig));
         } catch (IOException e) {

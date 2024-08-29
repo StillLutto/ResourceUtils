@@ -20,6 +20,20 @@
   "resource-utils.config.option.small_totem.description": "Modify the amount that the totem effect should be reduced by.",
   "resource-utils.config.option.no_explosion_sounds": "No Explosion Sounds",
   "resource-utils.config.option.no_explosion_sounds.description": "The option to disable explosion sounds. Recommended for Crystal and Minecraft PvP.",
-  "resource-utils.config.option.no_lava_fog": "Disable lava fog",
-  "resource-utils.config.option.no_lava_fog.description": "The option to disable fog when in lava."
+  "resource-utils.config.option.no_lava_fog": "Disable Lava Fog",
+  "resource-utils.config.option.no_lava_fog.description": "The option to disable lava fog.",
+  "resource-utils.config.option.no_underwater_fog": "Disable Underwater Fog",
+  "resource-utils.config.option.no_underwater_fog.description": "The option to disable underwater fog.",
+  "resource-utils.config.option.no_powder_snow_fog": "Disable Powder Snow Fog",
+  "resource-utils.config.option.no_powder_snow_fog.description": "The option to disable powder snow fog.",
+  "resource-utils.config.option.no_nether_fog": "Disable Nether Fog",
+  "resource-utils.config.option.no_nether_fog.description": "The option to disable nether fog.",
+  "resource-utils.config.option.no_overworld_fog": "Disable Overworld Fog",
+  "resource-utils.config.option.no_overworld_fog.description": "The option to disable overworld fog.",
+  "resource-utils.config.option.no_sky_fog": "Disable Sky Fog",
+  "resource-utils.config.option.no_sky_fog.description": "The option to disable sky fog.",
+  "resource-utils.config.option.no_darkness_fog": "Disable Darkness Fog",
+  "resource-utils.config.option.no_darkness_fog.description": "The option to disable darkness fog.",
+  "resource-utils.config.option.no_blindness_fog": "Disable Blindness Fog",
+  "resource-utils.config.option.no_blindness_fog.description": "The option to disable blindness fog."
 }

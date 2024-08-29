@@ -9,17 +9,7 @@ import dev.isxander.yacl3.impl.controller.TickBoxControllerBuilderImpl;
 import me.lutto.resourceutils.config.Config;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.texture.AbstractTexture;
-import net.minecraft.client.renderer.texture.DynamicTexture;
-import net.minecraft.client.renderer.texture.TextureAtlas;
-import net.minecraft.client.resources.model.ModelBakery;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.resources.ResourceManager;
-
-import java.io.IOException;
 
 import static me.lutto.resourceutils.ResourceUtils.MOD_ID;
 
@@ -111,6 +101,62 @@ public class ModMenuIntegration implements ModMenuApi {
                                         .text(Component.translatable(MOD_ID + ".config.option.no_lava_fog.description"))
                                         .build())
                                 .binding(false, () -> Config.no_lava_fog, value -> Config.no_lava_fog = value)
+                                .controller(TickBoxControllerBuilderImpl::new)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable(MOD_ID + ".config.option.no_underwater_fog"))
+                                .description(OptionDescription.createBuilder()
+                                        .text(Component.translatable(MOD_ID + ".config.option.no_underwater_fog.description"))
+                                        .build())
+                                .binding(false, () -> Config.no_underwater_fog, value -> Config.no_underwater_fog = value)
+                                .controller(TickBoxControllerBuilderImpl::new)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable(MOD_ID + ".config.option.no_powder_snow_fog"))
+                                .description(OptionDescription.createBuilder()
+                                        .text(Component.translatable(MOD_ID + ".config.option.no_powder_snow_fog.description"))
+                                        .build())
+                                .binding(false, () -> Config.no_powder_snow_fog, value -> Config.no_powder_snow_fog = value)
+                                .controller(TickBoxControllerBuilderImpl::new)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable(MOD_ID + ".config.option.no_overworld_fog"))
+                                .description(OptionDescription.createBuilder()
+                                        .text(Component.translatable(MOD_ID + ".config.option.no_overworld_fog.description"))
+                                        .build())
+                                .binding(false, () -> Config.no_overworld_fog, value -> Config.no_overworld_fog  = value)
+                                .controller(TickBoxControllerBuilderImpl::new)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable(MOD_ID + ".config.option.no_nether_fog"))
+                                .description(OptionDescription.createBuilder()
+                                        .text(Component.translatable(MOD_ID + ".config.option.no_nether_fog.description"))
+                                        .build())
+                                .binding(false, () -> Config.no_nether_fog, value -> Config.no_nether_fog = value)
+                                .controller(TickBoxControllerBuilderImpl::new)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable(MOD_ID + ".config.option.no_sky_fog"))
+                                .description(OptionDescription.createBuilder()
+                                        .text(Component.translatable(MOD_ID + ".config.option.no_sky_fog.description"))
+                                        .build())
+                                .binding(false, () -> Config.no_sky_fog, value -> Config.no_sky_fog = value)
+                                .controller(TickBoxControllerBuilderImpl::new)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable(MOD_ID + ".config.option.no_darkness_fog"))
+                                .description(OptionDescription.createBuilder()
+                                        .text(Component.translatable(MOD_ID + ".config.option.no_darkness_fog.description"))
+                                        .build())
+                                .binding(false, () -> Config.no_darkness_fog, value -> Config.no_darkness_fog = value)
+                                .controller(TickBoxControllerBuilderImpl::new)
+                                .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Component.translatable(MOD_ID + ".config.option.no_blindness_fog"))
+                                .description(OptionDescription.createBuilder()
+                                        .text(Component.translatable(MOD_ID + ".config.option.no_blindness_fog.description"))
+                                        .build())
+                                .binding(false, () -> Config.no_blindness_fog, value -> Config.no_blindness_fog = value)
                                 .controller(TickBoxControllerBuilderImpl::new)
                                 .build())
                         .build())
