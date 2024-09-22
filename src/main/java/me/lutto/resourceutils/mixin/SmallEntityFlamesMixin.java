@@ -15,13 +15,13 @@ public class SmallEntityFlamesMixin {
 
     @ModifyVariable(method = "renderFlame", at = @At(value = "LOAD", ordinal = 0), ordinal = 0)
     private TextureAtlasSprite injectedFire0(TextureAtlasSprite value) {
-        if (!Config.enabled || !Config.small_flame) return value;
+        if (!Config.enabled || !Config.small_fire_model) return value;
         return Minecraft.getInstance().getTextureAtlas(ModelBakery.FIRE_0.atlasLocation()).apply(ResourceLocation.fromNamespaceAndPath("resource-utils", "block/fire_0"));
     }
 
     @ModifyVariable(method = "renderFlame", at = @At(value = "LOAD", ordinal = 0), ordinal = 1)
     private TextureAtlasSprite injectedFire1(TextureAtlasSprite value) {
-        if (!Config.enabled || !Config.small_flame) return value;
+        if (!Config.enabled || !Config.small_fire_model) return value;
         return Minecraft.getInstance().getTextureAtlas(ModelBakery.FIRE_1.atlasLocation()).apply(ResourceLocation.fromNamespaceAndPath("resource-utils", "block/fire_1"));
     }
 }

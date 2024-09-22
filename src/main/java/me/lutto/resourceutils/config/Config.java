@@ -23,7 +23,7 @@ public class Config {
     public static boolean clearer_wither_hearts = false;
 
     public static int low_fire = 20;
-    public static boolean small_flame = true;
+    public static boolean small_fire_model = true;
     public static int low_held_up_shield = 25;
     public static int low_side_shield = 25;
     public static int shield_size = 0;
